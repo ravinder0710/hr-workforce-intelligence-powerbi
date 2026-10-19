@@ -1,0 +1,8 @@
+# Core Analytics & Power BI Modeling Prerequisites
+# Recommended Power BI Version: Microsoft Power BI Desktop (Latest 64-bit)
+# Dataset Engine: Microsoft Excel / Power Query Engine
+
+# Optional Python Environment (for data validation, openpyxl, pandas)
+pandas>=2.0.0
+openpyxl>=3.1.0
+numpy>=1.24.0

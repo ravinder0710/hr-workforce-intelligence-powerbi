@@ -1,0 +1,19 @@
+# ==============================================================================
+# .gitignore for HR Workforce Intelligence & Decision Support Dashboard
+# Stack  : Power BI (.pbix), Power Query, DAX, Excel
+# Author : Ravinder Gupta (https://github.com/ravinder0710)
+# ==============================================================================
+
+# --- Operating System & Temporary Files ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.temp
+~$*.xlsx
+~$*.docx
+
+# --- IDE & Editor Settings ---
+.vscode/
+.idea/
+*.swp
