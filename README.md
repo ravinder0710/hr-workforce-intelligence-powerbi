@@ -212,7 +212,6 @@ DIVIDE([Due for Retrenchment], [Total Employees], 0)
 ---
 
 ## 📂 Repository Structure
-
 ```text
 hr-workforce-intelligence-powerbi/
 │
@@ -220,10 +219,11 @@ hr-workforce-intelligence-powerbi/
 ├── HR_Master_Dataset.xlsx                                # Consolidated master employee dataset (2,925 rows)
 ├── HR_Workforce_Intelligence_Dashboard_Enhanced_Final_Report.docx # Comprehensive project report & documentation
 │
+├── data_architecture_pipeline.png                        # Workforce Data Pipeline & Decision Rule Engine Architecture
 ├── hr_dashboard_page_1.png                               # Page 1: Attrition Overview
 ├── hr_dashboard_page_2.png                               # Page 2: Job Role Attrition
 ├── hr_dashboard_page_3.png                               # Page 3: Age & Gender Attrition
-├── hr_dashboard_page_4.png                               # Page 4: Workforce Overview
+├── hr_dashboard_page_4.png                               # Page 4: Workforce Overview & Retrenchment Grid
 ├── hr_dashboard_page_5.png                               # Page 5: HR Actions Review List
 ├── hr_dashboard_page_6.png                               # Page 6: Workforce Detail
 │
