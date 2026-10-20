@@ -102,28 +102,28 @@ The decision support module operationalizes standard corporate HR review policie
 
 ## 🏗️ Data Architecture & Pipeline
 
-```text
-Raw HR Records (2,925 Rows)
-            │
-            ▼
-[Power Query M-Engine ETL]
- • Age Grouping: 18–25 | 26–35 | 36–45 | 46–55 | 56+
- • Job Level Mapping: Entry | Junior | Mid | Senior | Executive
- • Performance & Satisfaction Standardized Buckets
- • Distance From Home Segmentation: Near by | Far | Very Far
- • Reconciled Gender Attribute Consistency
-            │
-            ▼
-[Consolidated Master HR Dataset] (2,925 Rows × 35+ Dimensions)
-            │
-            ▼
-[DAX Measure & Business Rule Engine]
- ├── Core Attrition Metrics ([Total Attrition], [Attrition Rate], etc.)
- ├── Workforce Demographics ([Active Headcount], [Gender Counts])
- └── Screening Flags ([Due for Promotion], [Due for Retrenchment])
-            │
-            ├──► Pages 1–3: Attrition Analysis Module
-            └──► Pages 4–6: Workforce Decision Support Module
+```mermaid
+flowchart TD
+    A["Raw HR Records - 2,925 Headcount Across Operations"] --> B["Power Query M-Engine ETL"]
+    
+    B -->|"Age Grouping & Distance Buckets"| C["Master Workforce Model - 2,925 Rows x 35 Dimensions"]
+    
+    C --> D["DAX Business Rule Engine"]
+    
+    subgraph AttritionIntelligence
+        E["Active Headcount: 2,433"]
+        F["Total Attrition: 492 (16.82%)"]
+        G["R&D (56.7%) & Entry-Level (57.1%)"]
+    end
+
+    subgraph DecisionSupport
+        H["Promotion Review: 144 Staff (10-15 Yrs Stagnation)"]
+        I["Retrenchment Review: 234 Staff (18+ Yrs Service)"]
+        J["Severance Liability & Transition Staging"]
+    end
+
+    D --> AttritionIntelligence
+    D --> DecisionSupport
 ```
 
 ---
@@ -258,8 +258,6 @@ hr-workforce-intelligence-powerbi/
 **Ravinder Gupta**  
 *Data Analyst | Business Intelligence & Human Capital Analytics Specialist*  
 
-- 📍 **Location:** Alwar, Rajasthan, India  
+- 📍 **Location:** Gurugram (Delhi-NCR), India  
 - 📧 **Email:** [iamravindergupta17@gmail.com](mailto:iamravindergupta17@gmail.com)  
-- 💬 **WhatsApp:** [+91 9982637026](https://wa.me/919982637026?text=Hi%20Ravinder,%20saw%20your%20HR%20Workforce%20Intelligence%20portfolio)  
-- 💼 **LinkedIn:** [linkedin.com/in/ravinder-gupta-da](https://linkedin.com/in/ravinder-gupta-da)  
 - 🐙 **GitHub:** [github.com/ravinder0710](https://github.com/ravinder0710)
